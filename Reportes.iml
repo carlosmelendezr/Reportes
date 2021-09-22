@@ -7,8 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="jasperreports-6.3.0" level="project" />
     <orderEntry type="library" exported="" name="sqlite-jdbc-3.34.0" level="project" />
     <orderEntry type="library" exported="" name="aopalliance-1.0" level="project" />
+    <orderEntry type="library" exported="" name="jasperreports-6.17.0" level="project" />
+    <orderEntry type="library" exported="" name="commons-collections4-4.4" level="project" />
   </component>
 </module>

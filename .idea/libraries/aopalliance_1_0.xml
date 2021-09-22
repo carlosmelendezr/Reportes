@@ -22,7 +22,6 @@
       <root url="jar://$USER_HOME$/Downloads/jar_files/jackson-core-2.1.4.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/jar_files/jackson-databind-2.1.4.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/jar_files/jakarta-regexp-1.4.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/jar_files/jasperreports-6.3.0.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/jar_files/javax.inject-1.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/jar_files/jcommon-1.0.23.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/jar_files/jfreechart-1.0.19.jar!/" />
