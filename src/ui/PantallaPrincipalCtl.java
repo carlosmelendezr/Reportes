@@ -81,21 +81,29 @@ public class PantallaPrincipalCtl implements Initializable {
 
     public void handleClicks(ActionEvent actionEvent) {
         if (actionEvent.getSource() == btnCustomers) {
-            pnlCustomer.setStyle("-fx-background-color : #1620A1");
+            pnlCustomer.setStyle("-fx-background-color : #464F67");
             pnlCustomer.toFront();
         }
         if (actionEvent.getSource() == btnImportarProducto) {
-            pnlMenus.setStyle("-fx-background-color : #53639F");
+            pnlMenus.setStyle("-fx-background-color : #464F67");
             pnlMenus.toFront();
         }
         if (actionEvent.getSource() == btnOverview) {
-            pnlOverview.setStyle("-fx-background-color : #02030A");
+            pnlOverview.setStyle("-fx-background-color : #464F67");
             pnlOverview.toFront();
         }
         if(actionEvent.getSource()==btnOrders)
         {
             pnlOrders.setStyle("-fx-background-color : #464F67");
             pnlOrders.toFront();
+            Node nodo=null;
+            try {
+                nodo = FXMLLoader.load(getClass().getResource("Datos.fxml"));
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+            pnlCustomer.getChildren().add(nodo);
+            //pnItems.getChildren().add(nodo);
 
         }
     }
