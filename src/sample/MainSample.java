@@ -39,8 +39,8 @@ public class MainSample extends Application {
             JasperReport jreport=null;
 
             Map<String, Object> map = new HashMap<>();
-            map.put("FechaDesde", "2021-10-01");
-            map.put("FechaHasta", "2021-10-30");
+            map.put("FechaDesde", "2021-09-01");
+            map.put("FechaHasta", "2021-09-30");
             try {
                 jreport = getJasperReport();
             } catch (Exception e) {

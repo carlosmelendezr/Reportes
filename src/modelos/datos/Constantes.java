@@ -6,6 +6,7 @@ import java.util.List;
 public class Constantes {
     public static String dirLocal    = "C:/posweb/db/";
     public static String dirOut    = "C:/posweb/db/out";
+    public static String dirRep    = "C:/posweb/rep/";
     public static String dbPrincipal = "posweb.db";
 
     /* Creacion de tablas */
@@ -26,7 +27,8 @@ public class Constantes {
             + "	error integer, "
             + "	espera integer, "
             + "	fecha date, "
-            + " hora text, "
+            + " hora text,"
+            + " idtasa integer, "
             + "	docweb text, "
             + "	fecsync date) ";
 

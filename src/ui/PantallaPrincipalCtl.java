@@ -24,7 +24,7 @@ public class PantallaPrincipalCtl implements Initializable {
     private Button btnOverview;
 
     @FXML
-    private Button btnOrders;
+    private Button btnVentasDivisa;
 
     @FXML
     private Button btnCustomers;
@@ -33,7 +33,7 @@ public class PantallaPrincipalCtl implements Initializable {
     private Button btnImportarProducto;
 
     @FXML
-    private Button btnPackages;
+    private Button btnVentasBolivares;
 
     @FXML
     private Button btnSettings;
@@ -44,8 +44,6 @@ public class PantallaPrincipalCtl implements Initializable {
     @FXML
     private Pane pnlCustomer;
 
-    @FXML
-    private Pane pnlOrders;
 
     @FXML
     private Pane pnlOverview;
@@ -81,31 +79,44 @@ public class PantallaPrincipalCtl implements Initializable {
 
     public void handleClicks(ActionEvent actionEvent) {
         if (actionEvent.getSource() == btnCustomers) {
-            pnlCustomer.setStyle("-fx-background-color : #464F67");
+            pnlCustomer.setStyle("-fx-background-color : #deeaee");
             pnlCustomer.toFront();
         }
         if (actionEvent.getSource() == btnImportarProducto) {
-            pnlMenus.setStyle("-fx-background-color : #464F67");
+            pnlMenus.setStyle("-fx-background-color : #deeaee");
             pnlMenus.toFront();
         }
         if (actionEvent.getSource() == btnOverview) {
-            pnlOverview.setStyle("-fx-background-color : #464F67");
+            pnlOverview.setStyle("-fx-background-color : #deeaee");
             pnlOverview.toFront();
         }
-        if(actionEvent.getSource()==btnOrders)
+        if(actionEvent.getSource()==btnVentasDivisa)
         {
-            pnlOrders.setStyle("-fx-background-color : #464F67");
-            pnlOrders.toFront();
-            Node nodo=null;
-            try {
-                nodo = FXMLLoader.load(getClass().getResource("Datos.fxml"));
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
-            pnlCustomer.getChildren().add(nodo);
-            //pnItems.getChildren().add(nodo);
-
+            pnlCustomer.setStyle("-fx-background-color : #deeaee");
+            pnlCustomer.toFront();
+            Contexto.reporteSeleccionado = Contexto.VENTAS_DOLARES_CONTRIBUYENTE;
         }
+
+        if(actionEvent.getSource()==btnVentasBolivares)
+        {
+            pnlCustomer.setStyle("-fx-background-color : #deeaee");
+            pnlCustomer.toFront();
+            Contexto.reporteSeleccionado = Contexto.VENTAS_DOLARES_CONTRIBUYENTE_BS;
+        }
+
+        cargarParametros();
+    }
+
+    public void cargarParametros() {
+        Node nodo=null;
+        try {
+            nodo = FXMLLoader.load(getClass().getResource("Datos.fxml"));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        pnlCustomer.getChildren().add(nodo);
+
+
     }
 }
 

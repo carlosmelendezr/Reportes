@@ -1,5 +1,7 @@
 package sample;
 
+import modelos.datos.Constantes;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -15,7 +17,7 @@ public class  Connect {
             conn = DriverManager.getConnection(url);
             conn.setAutoCommit(true);
 
-            System.out.println("La conexion to SQLite ha sido establecida. Archivo "+Constantes.dirLocal+nombreArchivo);
+            System.out.println("La conexion to SQLite ha sido establecida. Archivo "+ Constantes.dirLocal+nombreArchivo);
 
         } catch (SQLException e) {
             System.out.println(e.getMessage());

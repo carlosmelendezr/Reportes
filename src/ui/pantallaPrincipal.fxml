@@ -28,12 +28,12 @@
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="btnOrders" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Ventas en Divisa Contribuyente">
+                <Button fx:id="btnVentasDivisa" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Ventas en Divisa Contribuyente">
                     <padding>
                         <Insets left="50.0" />
                     </padding>
                 </Button>
-                <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Usuarios">
+                <Button fx:id="btnVentasBolivares" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Ventas es Bs. Contribuyente">
                     <padding>
                         <Insets left="50.0" />
                     </padding>
